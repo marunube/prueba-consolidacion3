@@ -1,0 +1,816 @@
+body {
+    background-color: $colorvivid;
+    margin: 0rem;
+    font-family: $myfont;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .navbtn {
+        width: 100%;
+        height: 2.5rem;
+        background-color: $colordark;
+    }
+
+    .navbtn__menu {
+        border-style: none;
+        outline-style: none;
+        background-color: $colordark;
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.375rem;
+        color: $colorpink;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0.313rem;
+        margin: 0.313rem;
+        color: $colorpink;
+        font-size: $fontsizetitle;
+    }
+
+    .title__text {
+        font-size: $fontsizetitle;
+        margin: 0.313rem;
+        width: 4.375rem;
+    }
+
+    .searchbar {
+        background-color: $colorlight;
+        width: 40%;
+        border-radius: 0.3125rem;
+        height: 1.375rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .searchbar__item {
+        border-style: none;
+        border-radius: 5px;
+        outline-style: none;
+        background-color: $colorlight;
+        width: 40%;
+    }
+
+    .chat__container {
+        display: flex;
+        flex-direction: column;
+        height: 23.125rem;
+    }
+
+    .id__uva {
+        border-bottom: solid;
+        border-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user {
+        display: flex;
+        align-items: center;
+        height: 4.375rem;
+        width: 100%;
+        margin: 0rem;
+        background-color: $colormedium;
+        border-top: solid;
+        border-top-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user-btn {
+        background-color: $colormedium;
+        margin: 0.625rem;
+    }
+
+    .user__img {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        margin: 0.625rem;
+    }
+
+    .user__data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat__timedate {
+        font-size: 0.625rem;
+        margin: 0rem;
+        margin-left: 0.625rem;
+    }
+
+    .conversation__container {
+        background-color: $colorback;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .conversation__title {
+        background-color: $colordark;
+        height: 3.125rem;
+        width: 100%;
+        margin-bottom: 0.9375rem;
+        color: $colorpink ;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-item {
+        margin-left: 0.3125rem;
+        font-size: $fontsizetitle;
+    }
+
+    .conversation__bubble-left {
+        background-color: $colorpink;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: 0.938rem;
+        margin-left: 2%;
+        padding: 0.3125rem;
+    }
+
+    .conversation__bubble-rigth {
+        background-color: $colorlight;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: $fontsizemedium;
+        left: 45%;
+        margin-left: 52%;
+        padding: 0.3125rem;
+    }
+
+    .bubble__text {
+        margin: 0.0625rem;
+    }
+
+    .container__text-input {
+        height: 3.125rem;
+        background-color: $colordark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.9375rem;
+    }
+
+    .input__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background-color: aliceblue;
+        width: 90%;
+        border-radius: 0.3125rem;
+        margin-left: 0.3125rem;
+    }
+
+    .fa-camera {
+        margin: 0.3125rem;
+        margin-left: 0rem;
+    }
+
+    .fa-plus {
+        margin: 0.3125rem;
+    }
+
+    .input__box {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        border-radius: 0.3125rem;
+        border-style: none;
+        width: 75%;
+        height: 1.25rem;
+        background-color: aliceblue;
+        outline-style: none;
+    }
+
+    .icon {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        background-color: aliceblue;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: $colormediumd;
+        width: 40%;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dropdown-ico {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .id__doc {
+        border-top-style: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+
+    .id__img {
+        border-bottom: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+        font-size: $fontsizesmall;
+        margin: 0.3125rem;
+    }
+    .chat_translated {
+        background-color: red;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .navbtn {
+        width: 100%;
+        height: 2.5rem;
+        background-color: $colordark;
+    }
+
+    .navbtn__menu {
+        border-style: none;
+        outline-style: none;
+        background-color: $colordark;
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.375rem;
+        color: $colorpink;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0.313rem;
+        margin: 0.313rem;
+        color: $colorpink;
+        font-size: $fontsizetitle;
+    }
+
+    .title__text {
+        font-size: $fontsizetitle;
+        margin: 0.313rem;
+        width: 4.375rem;
+    }
+
+    .searchbar {
+        background-color: $colorlight;
+        width: 40%;
+        border-radius: 0.3125rem;
+        height: 1.375rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .searchbar__item {
+        border-style: none;
+        border-radius: 5px;
+        outline-style: none;
+        background-color: $colorlight;
+        width: 40%;
+    }
+
+    .chat__container {
+        display: flex;
+        flex-direction: column;
+        height: 23.125rem;
+    }
+
+    .id__uva {
+        border-bottom: solid;
+        border-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user {
+        display: flex;
+        align-items: center;
+        height: 4.375rem;
+        width: 100%;
+        margin: 0rem;
+        background-color: $colormedium;
+        border-top: solid;
+        border-top-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user-btn {
+        background-color: $colormedium;
+        margin: 0.625rem;
+    }
+
+    .user__img {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        margin: 0.625rem;
+    }
+
+    .user__data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat__timedate {
+        font-size: 0.625rem;
+        margin: 0rem;
+        margin-left: 0.625rem;
+    }
+
+    .conversation__container {
+        background-color: $colorback;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .conversation__title {
+        background-color: $colordark;
+        height: 3.125rem;
+        width: 100%;
+        margin-bottom: 0.9375rem;
+        color: $colorpink ;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-item {
+        margin-left: 0.3125rem;
+        font-size: $fontsizetitle;
+    }
+
+    .conversation__bubble-left {
+        background-color: $colorpink;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: 0.938rem;
+        margin-left: 2%;
+        padding: 0.3125rem;
+    }
+
+    .conversation__bubble-rigth {
+        background-color: $colorlight;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: $fontsizemedium;
+        left: 45%;
+        margin-left: 52%;
+        padding: 0.3125rem;
+    }
+
+    .bubble__text {
+        margin: 0.0625rem;
+    }
+
+    .container__text-input {
+        height: 3.125rem;
+        background-color: $colordark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.9375rem;
+    }
+
+    .input__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background-color: aliceblue;
+        width: 90%;
+        border-radius: 0.3125rem;
+        margin-left: 0.3125rem;
+    }
+
+    .fa-camera {
+        margin: 0.3125rem;
+        margin-left: 0rem;
+    }
+
+    .fa-plus {
+        margin: 0.3125rem;
+    }
+
+    .input__box {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        border-radius: 0.3125rem;
+        border-style: none;
+        width: 75%;
+        height: 1.25rem;
+        background-color: aliceblue;
+        outline-style: none;
+    }
+
+    .icon {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        background-color: aliceblue;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: $colormediumd;
+        width: 40%;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dropdown-ico {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .id__doc {
+        border-top-style: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+
+    .id__img {
+        border-bottom: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+        font-size: $fontsizesmall;
+        margin: 0.3125rem;
+    }
+    .chat_translated {
+        background-color: red;
+    }
+}
+
+
+@media (min-width: 1025px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $colorback;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar__home-text {
+        margin-left: 20px;
+        color:$colormedium;
+    }
+
+    .navbar__list-container {
+        margin-right: 20px;
+        height: 50px;
+    }
+
+    .navbar__list {
+        display: flex;
+        flex-direction: row;
+        color: $colormedium;
+        margin-top: 0;        
+    }
+
+    .nav-list__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 54px;
+        width: max-content;
+        
+    }
+
+    .nav-list__item:hover {
+        background-color: $colorback;
+
+    }
+
+    .navbtn {
+        display: none;
+        width: 100%;
+        height: 2.5rem;
+        background-color: $colordark;
+    }
+
+    .navbtn__menu {
+        border-style: none;
+        outline-style: none;
+        background-color: $colordark;
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.375rem;
+        color: $colorpink;
+    }
+
+    .t-s-c-c__container{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        margin-top: 2.6rem;
+        margin-bottom: 2.6rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+        width: fit-content;
+        box-shadow: 0.125rem 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
+        border-radius: 0.1875rem;
+    }
+
+    .title-searchbar__container {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-bottom: 0rem;
+      background-color: $colordark;
+      width: 62.5rem;
+      border-bottom: grey 1px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0.313rem;
+        margin: 0px;
+        color: $colorpink;
+        font-size: $fontsizetitle;
+    }
+
+    .title__text {
+        font-size: $fontsizetitle;
+        margin: 0.313rem;
+        width: 4.375rem;
+    }
+
+    .searchbar {
+        background-color: $colorlight;
+        width: 40%;
+        border-radius: 0.3125rem;
+        height: 1.375rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-solid {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .searchbar__item {
+        border-style: none;
+        border-radius: 5px;
+        outline-style: none;
+        background-color: $colorlight;
+        width: 40%;
+    }
+
+    .chat-conversation__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: grey 1px;
+        
+    }
+
+    .chat__container {
+        display: flex;
+        flex-direction: column;
+        height: 562px;
+        width: 25rem;
+        background-color: $colormedium;
+    }
+
+    .id__uva {
+        border-bottom: solid;
+        border-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user {
+        display: flex;
+        align-items: center;
+        height: 4.375rem;
+        width: 100%;
+        margin: 0rem;
+        background-color: $colormedium;
+        border-top: solid;
+        border-top-width: 0.01px;
+        border-color: #80808060;
+    }
+
+    .chat__user-btn {
+        background-color: $colormedium;
+        margin: 0.625rem;
+    }
+
+    .user__img {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 50%;
+        margin: 0.625rem;
+    }
+
+    .user__data {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chat__timedate {
+        font-size: 0.625rem;
+        margin: 0rem;
+        margin-left: 0.625rem;
+    }
+
+    .conversation__container {
+        background-color: $colorback;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 37.5rem;
+    }
+
+    .conversation__title {
+        background-color: $colordark;
+        height: 3.125rem;
+        width: 100%;
+        margin-bottom: 0.9375rem;
+        color: $colorpink ;
+        display: flex;
+        align-items: center;
+    }
+
+    .title-item {
+        margin-left: 0.3125rem;
+        font-size: $fontsizetitle;
+    }
+
+    .conversation__bubble-left {
+        background-color: $colorpink;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: 0.938rem;
+        margin-left: 2%;
+        padding: 0.3125rem;
+    }
+
+    .conversation__bubble-rigth {
+        background-color: $colorlight;
+        width: 45%;
+        border-radius: 0.352rem;
+        font-size: $fontsizemedium;
+        left: 45%;
+        margin-left: 52%;
+        padding: 0.3125rem;
+    }
+
+    .bubble__text {
+        margin: 0.0625rem;
+    }
+
+    .container__text-input {
+        height: 3.125rem;
+        background-color: $colordark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.9375rem;
+    }
+
+    .input__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        background-color: aliceblue;
+        width: 90%;
+        border-radius: 0.3125rem;
+        margin-left: 0.3125rem;
+    }
+
+    .fa-camera {
+        margin: 0.3125rem;
+        margin-left: 0rem;
+    }
+
+    .fa-plus {
+        margin: 0.3125rem;
+    }
+
+    .input__box {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        border-radius: 0.3125rem;
+        border-style: none;
+        width: 75%;
+        height: 1.25rem;
+        background-color: aliceblue;
+        outline-style: none;
+    }
+
+    .icon {
+        margin-left: 0.3125rem;
+        padding: 0.3125rem;
+        background-color: aliceblue;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: $colormediumd;
+        width: 40%;
+        border-radius: 0.3125rem;
+    }
+
+    .dropdown-menu__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .dropdown-ico {
+        margin-left: 0.3125rem;
+        margin-right: 0.3125rem;
+    }
+
+    .id__doc {
+        border-top-style: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+
+    .id__img {
+        border-bottom: solid;
+        border-color: #DDBEAAAF;
+        border-width: 0.0625rem;
+    }
+    .footer {
+        display: flex;
+        justify-content: end;
+        font-size: $fontsizesmall;
+        margin: 0.3125rem;
+    }
+    .chat_translated {
+        background-color: red;
+    }
+
+
+}
+
